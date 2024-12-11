@@ -139,7 +139,7 @@ const token_categories: TokenCategory[] = [
 
 const TokenDistribution = () => {
   return (
-    <div className="wcu-area-1 pt-130 pb-140 position-relative" id="feature">
+    <div className="wcu-area-1 pt-130 pb-140 position-relative token-distribution" id="feature">
       <div className="bg-gradient-1">
         <Image src={choose_thumb_1} alt="img" width={500} height={500} />
       </div>
@@ -212,9 +212,9 @@ const TokenDistribution = () => {
                </div>
             </div> */}
 
-        {/* New section for Token Categories in Table Format */}
+        {/* New section for Token Categories in Table Format  for larger screens*/}
         <div className="mt-50">
-          <table className="table-striped">
+          <table className="table-striped token-distribution-table">
             <thead>
               <tr>
                 <th>Category</th>
@@ -234,6 +234,32 @@ const TokenDistribution = () => {
               ))}
             </tbody>
           </table>
+        {/* </div> */}
+        {/* mobile screen */}
+        {/* <div className="mt-50"> */}
+          <div className="token-distribution-grid-container">
+            {token_categories.map((item) => (
+              <div className="token-distribution-grid-item" key={item.id}>
+                <div className="token-distribution-grid-row">
+                  
+                  <span className="token-distribution-grid-value">{item.category}</span>
+                </div>
+                <div className="token-distribution-grid-row">
+                  {/* <span className="token-distribution-grid-label">Description:</span> */}
+                  <span className="token-distribution-grid-label">{item.description}</span>
+                </div>
+                <div className="token-distribution-grid-row">
+                  {/* <span className="token-distribution-grid-label">Why?</span> */}
+                  <span className="token-distribution-grid-label">{item.reason}</span>
+                </div>
+                <div className="token-distribution-grid-row">
+                  <span className="token-distribution-grid-label">Percentage:</span>
+                  <span className="token-distribution-grid-value">{item.percentage}%</span>
+                </div>
+                
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

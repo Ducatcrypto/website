@@ -67,7 +67,7 @@ const choose_data: DataType2[] = [
 
 const ChooseArea = () => {
   return (
-    <div className="wcu-area-1 pt-130 pb-140 position-relative" id="feature">
+    <div className="wcu-area-1 pt-130 pb-140 position-relative token-distribution" id="feature">
       <div className="bg-gradient-1">
         <Image src={choose_thumb_1} alt="img" />
       </div>
