@@ -1389,7 +1389,7 @@ label {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 0;
     letter-spacing: -1.5px;
 }
@@ -1485,7 +1485,7 @@ label {
     margin: 0 5px;
 }
 .section-title-two.section-title .title {
-    font-size: 60px;
+    font-size: 45px;
     background: linear-gradient(180deg, var(--tg-white) 0%, var(--tg-primary-color) 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -1653,7 +1653,7 @@ label {
 .roadmap-content .title {
     display: flex;
     align-items: flex-start;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 16px;
     gap: 16px;
@@ -3533,7 +3533,7 @@ label {
     color: var(--tg-white);
     font-weight: 700;
     letter-spacing: -2.8px;
-    font-size: 70px;
+    font-size: 45px;
     line-height: 1.2857;
 }
 
@@ -3557,18 +3557,18 @@ label {
 
 @media (max-width: 1399px) {
     .hero-title {
-      font-size: 60px;
+      font-size: 45px;
     }
 }
 @media (max-width: 1299px) {
     .hero-title {
-      font-size: 50px;
+      font-size: 45px;
       letter-spacing: normal;
     }
 }
 @media (max-width: 991px) {
     .hero-title {
-      font-size: 40px;
+      font-size: 45px;
     }
 }
 @media (max-width: 767px) {
@@ -4014,12 +4014,13 @@ label {
     padding: 40px;
     gap: 32px;
     border: 1px solid rgba(255, 255, 255, 0.12);
+    margin-bottom: 25px;
     /* Medium devices */
     /* Extra small devices */
   }
-  .feature-card:not(:last-child) {
+  /* .feature-card:not(:last-child) {
     margin-bottom: 25px;
-  }
+  } */
   @media (max-width: 991px) {
     .feature-card {
       margin-left: 0;
@@ -6614,7 +6615,12 @@ td{
   
   .token-distribution-grid-value {
     color: var(--tg-white);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
+  }
+
+  .faq-thumb{
+    display: flex;
+    justify-content: center;
   }
 }

@@ -83,22 +83,22 @@ const choose_data: DataType2[] = [
 ];
 
 const token_categories: TokenCategory[] = [
-  {
-    id: 1,
-    category: "Private Sale",
-    description:
-      "Early funding stage to kickstart the project. Crucial for development and initial partnerships.",
-    percentage: "0",
-    reason: "Nobody gets unfair early access to the token",
-  },
-  {
-    id: 2,
-    category: "Airdrop",
-    description: "Promotional tokens to drive adoption and rewards",
-    percentage: "0",
-    reason:
-      "Nobody gets unfair access to the token. Even if they participate in promotions",
-  },
+  // {
+  //   id: 1,
+  //   category: "Private Sale",
+  //   description:
+  //     "Early funding stage to kickstart the project. Crucial for development and initial partnerships.",
+  //   percentage: "0",
+  //   reason: "Nobody gets unfair early access to the token",
+  // },
+  // {
+  //   id: 2,
+  //   category: "Airdrop",
+  //   description: "Promotional tokens to drive adoption and rewards",
+  //   percentage: "0",
+  //   reason:
+  //     "Nobody gets unfair access to the token. Even if they participate in promotions",
+  // },
   {
     id: 3,
     category: "Liquidity",
@@ -113,28 +113,28 @@ const token_categories: TokenCategory[] = [
     percentage: "85",
     reason: "Fair access given to everyone",
   },
-  {
-    id: 5,
-    category: "Treasury",
-    description: "Treasury saved up by the protocol",
-    percentage: "0",
-    reason: "Team must build treasury by adding value to the community.",
-  },
-  {
-    id: 6,
-    category: "Advisors",
-    description:
-      "Allocation for the experts who guide the protocol's development and governance",
-    percentage: "0",
-    reason: "No unfair allocation based on experience",
-  },
-  {
-    id: 7,
-    category: "Team",
-    description: "Tokens held by the team",
-    percentage: "0",
-    reason: "Team also does not get any free tokens",
-  },
+  // {
+  //   id: 5,
+  //   category: "Treasury",
+  //   description: "Treasury saved up by the protocol",
+  //   percentage: "0",
+  //   reason: "Team must build treasury by adding value to the community.",
+  // },
+  // {
+  //   id: 6,
+  //   category: "Advisors",
+  //   description:
+  //     "Allocation for the experts who guide the protocol's development and governance",
+  //   percentage: "0",
+  //   reason: "No unfair allocation based on experience",
+  // },
+  // {
+  //   id: 7,
+  //   category: "Team",
+  //   description: "Tokens held by the team",
+  //   percentage: "0",
+  //   reason: "Team also does not get any free tokens",
+  // },
 ];
 
 const TokenDistribution = () => {
@@ -234,6 +234,10 @@ const TokenDistribution = () => {
               ))}
             </tbody>
           </table>
+          <p className="sec-text">
+            Note: 0% Allocation for pre-sale, team and treasury to ensue a fair launch and distribution.
+          </p>
+
         {/* </div> */}
         {/* mobile screen */}
         {/* <div className="mt-50"> */}

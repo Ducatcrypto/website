@@ -30,12 +30,12 @@ const HeaderThree = () => {
                                         <div className="navbar-wrap main-menu d-none d-lg-flex">
                                             <NavMenu />
                                         </div>
-                                        <div className="header-action">
+                                        {/* <div className="header-action">
                                             <ul className="list-wrap">
                                                 <li className="header-login"><Link href="/login">Login<i className="fas fa-user"></i></Link></li>
                                                 <li className="offcanvas-menu"><a onClick={() => setOffCanvas(true)} style={{ cursor: "pointer" }} className="menu-tigger"><i className="fas fa-bars"></i></a></li>
                                             </ul>
-                                        </div>
+                                        </div> */}
                                         <div onClick={() => setIsActive(true)} className="mobile-nav-toggler"><i className="fas fa-bars"></i></div>
                                     </nav>
                                 </div>
